@@ -1,0 +1,26 @@
+what is terraform
+    terraform is a open source infrasture as code tool in devops to create
+    and manage infrasture in cloud.
+    declarative configuration Language - HCL(Hashicorp configuration Language)
+    multi-cloud support like aws, azure, gcp
+    state Management - state file
+
+infrasture as code 
+    IAC is practise in devops, to create a resource on differnet cloud providers & platforms.
+    Instead of manually going and creating a resource, using code we can create all the cloud infrasture.
+    it will reduce the manual effort and which is faster way
+    store the code in github.
+
+commands :
+    terraform init
+    terraform validate
+    terraform paln
+    terraform apply
+    terraform destroy
+
+
+steps in  terraform to create resource 
+1. configuration
+2. palnning
+3. execution - create, modify
+4. destroy - cleanUp
