@@ -30,6 +30,8 @@ How can you do that?
     * terraform modules - re-use the configuaration for various environment by passing in
     different parameters.
     * terraform workkspace - using the same code we have with different state file for different environment
+    * terraform workspace create - create the workspace
+    * terraform workspace select - switch to the workspace
 
 4. What is the Terraform state file, and why is it important?
     Terraform state file is a Json or binary file that stores the current state of the managed infrastructure.
@@ -126,11 +128,12 @@ Ensure you meet the minimum requirements, update your CI/CD pipelines, and backu
 18. Your infrastructure contains database passwords and other sensitive information. How can you manage secrets and sensitive data in Terraform?
 
         * store secrets outside version control files, use hashicorp vault.
+        * attribure called sensitive
         * never-hardcore passwords
         * utilize terraform input variable or environment variable to pass sensitive
         values secretly in runtime
 
-19. Suppose you created an ec2 instance with terraform and after creation, you have removed the entry from the state file now, when you run terraform apply what will happen?
+20. Suppose you created an ec2 instance with terraform and after creation, you have removed the entry from the state file now, when you run terraform apply what will happen?
 
     As we have removed the entry from that state file so terraform will no longer manage that resource so on the next apply it will create a new resource.
 
