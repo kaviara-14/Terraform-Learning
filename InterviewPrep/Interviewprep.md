@@ -211,3 +211,8 @@ i.e. whatever we have defined in the .tf file
 * setup cornJob in cicd pipeline to check the drift, like corn job for dailyy to detect the drift
 * use terraform plan to check any changes happend in the infrastructure comparing with state file, if changes happend send out email
 * use terraform refresh
+
+33. You are tasked with managing a multi-region infrastructure using Terraform. How would you structure your configuration to ensure resources are deployed consistently across multiple regions?
+
+* we can use modular-approach
+* we can use alias to specify the instance in which region it needs to be created
