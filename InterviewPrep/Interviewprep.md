@@ -72,9 +72,10 @@ How can you do that?
         ```
 
 11. What are the advantages of using Terraform's "count" feature over resource duplication?
-    * count will define how many resource u want to create.
-    * create dynamically the reource based on the condition.
-
+    
+* count will define how many resource u want to create.
+* create resource based on the count count = var.ec1_instance ? 1:0
+      
 12 What is Terraform's "module registry," and how can you leverage it?
     Terraform's "module registry" is a central repository for sharing and discovering Terraform modules. The module registry allows users to publish their modules, which are reusable and shareable components of Terraform configurations.
 
