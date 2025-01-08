@@ -200,3 +200,8 @@ i.e. whatever we have defined in the .tf file
 30. Explain a situation where you might need to use terraform taint and what effect it has on resources.
     Terraform’s taint the command is used to mark a resource for recreation during the next terraform apply.
     This is particularly useful in situations where you want to force the recreation of a resource due to configuration changes, updates, or issues encountered during provisioning.
+
+31. You are managing a large Terraform state file, and you notice performance issues and longer execution times during terraform plan and terraform apply. How would you optimize this setup?
+
+* store the state file in s3 bucket
+* split the statefile based on the modules in s3 bucket(State File Partitioning)
