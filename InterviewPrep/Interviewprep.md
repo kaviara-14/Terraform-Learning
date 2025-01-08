@@ -205,3 +205,9 @@ i.e. whatever we have defined in the .tf file
 
 * store the state file in s3 bucket
 * split the statefile based on the modules in s3 bucket(State File Partitioning)
+
+32. How would you handle and prevent drift in your infrastructure with Terraform, especially if changes are made outside of Terraform (e.g., manual changes in the AWS console)?
+
+* setup cornJob in cicd pipeline to check the drift, like corn job for dailyy to detect the drift
+* use terraform plan to check any changes happend in the infrastructure comparing with state file, if changes happend send out email
+* use terraform refresh
