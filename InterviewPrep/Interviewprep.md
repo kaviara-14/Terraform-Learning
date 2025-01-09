@@ -216,3 +216,10 @@ i.e. whatever we have defined in the .tf file
 
 * we can use modular-approach
 * we can use alias to specify the instance in which region it needs to be created
+
+34. You are managing a Terraform codebase for a multi-environment setup (dev, staging, and prod). A recent change in the dev environment caused an issue in the staging environment. How would you design a strategy to manage Terraform code changes to prevent such issues in the future?
+
+* use terraform workspace, create a statefile for each environment
+* store it in remote backend s3 bucket and state locking using dynamodb
+* use modular approach to re-use the code for multi environment
+* either u can create a differnet tfvars file or u can use condition to pass the arguments
